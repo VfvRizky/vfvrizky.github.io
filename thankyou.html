@@ -33,11 +33,52 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/massage.css" rel="stylesheet">
+  
+  <script type="text/javascript">
+			function updateClock(){
+			  var now = new Date();
+			  var dname = now.getDay(),
+				  mo = now.getMonth(),
+				  dnum = now.getDate(),
+				  yr = now.getFullYear(),
+				  hou = now.getHours(),
+				  min = now.getMinutes(),
+				  sec = now.getSeconds(),
+				  pe = "AM";
+
+				  if(hou >= 12){
+					pe = "PM";
+				  }
+				  if(hou == 0){
+					hou = 12;
+				  }
+				  if(hou > 12){
+					hou = hou - 12;
+				  }
+
+				  Number.prototype.pad = function(digits){
+					for(var n = this.toString(); n.length < digits; n = 0 + n);
+					return n;
+				  }
+
+				  var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+				  var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+				  var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+				  var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+				  for(var i = 0; i < ids.length; i++)
+				  document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+			}
+
+			function initClock(){
+			  updateClock();
+			  window.setInterval("updateClock()", 1);
+			}
+    </script>
 
 
 </head>
 
-<body>
+<body onload="initClock()">
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -61,6 +102,22 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Back to Home</span></a></li>
+		  <li><a href="#"><i class="bx bx-time"></i> <!--digital clock start-->
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynum">00</span>,
+        <span id="year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+    <!--digital clock end--></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -69,7 +126,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Thankyou for your <br>Massage </h1>
+      <h1 id="jam">Thankyou for your <br>Massage </h1> 
       <p>📬<span class="typed" data-typed-items="I'll be answered A.S.A.P,Just wait I'll be Replied,Soon check your Email, Or Check your Phone Number, Stay soon"></span></p>
     </div>
   </section><!-- End Hero -->
