@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="Untuk~C" name="description">
+		<meta content="vfvrizky, vfv, portofolio, profil, vfvrizky.com, risky pernanda, risky p, website vfvrizky, profil vfvrizky, web vfv,vfun,vfv vv, meme vv, sticker vv, vfv mood, vfv bahagia, vmood" name="keywords">
+		<link href="assets/img/favicon2.png" rel="icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>C</title>
+    </head>
+    <body>
+        <div class='position-absolute top-50 start-50 translate-middle'>
+            <a href="https://drive.google.com/drive/folders/1df_olsttR8OGXXR67YExSoVnIy_IcO9N"><button id='button' class='btn btn-primary btn-lg'>🌙Malam~Minggu📝</button></a>
+            <div id='iloveyou' style='display: none;'>
+                <h2 class='text-center'>hai Caa, <br>apa kabar...<br>😊</h2>
+            </div>
+        </div>
+        <span id='hati' class='fixed-bottom text-center my-3' onclick='hati()'></span>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+        <script type="text/javascript">
+            const author = 'Vv	';
+            
+			document.getElementById('hati').innerHTML = `🧠Try to Remember🧠`;
+			
+            const swals = Swal.mixin({
+                cancelButtonColor: '#d33',
+                confirmButtonColor: '#0C213D',
+            });
+            async function mulai(){
+				await swals.fire('😑\n ya udah deh\nKarena udah terlanjur');
+				await swals.fire('🙁\nBentar ya...');
+				await swals.fire('🌀\nGanti mood dulu...');
+				await swals.fire('✨😶‍✨');
+				await swals.fire('Oke udah siap?');
+                await swals.fire('😊\n Hai Kamu', '', 'question');
+                await swals.fire('Iya, Kamu\n😁');
+               
+                var { value: nama } = await swals.fire({
+                    title: 'Kenalan dulu dong 😊\n kamu biasanya dipanggil \napa nih?',
+                    input: 'text',
+					cancelButtonText: 'GAK MAU 😑',
+                    showCancelButton: true,
+                });
+                
+                if(nama){
+					var { value: Baik } = await swals.fire({
+                        title: `hai ${nama}😊\naku panggil ${nama} boleh ?`,
+                        confirmButtonText: 'boleh dong',
+                    });   
+                    var { value: Baik } = await swals.fire({
+                        title: `${nama}, kabarnya gimana hari ini😗 ?`,
+                        confirmButtonText: 'Baik',
+                        cancelButtonText: 'GAK',
+                        showCancelButton: true,
+						
+                    });
+					if(Baik){
+						await swals.fire('Wah🤗, Vv Senang mendengarnya\n😁');
+						var { value: Udah } = await swals.fire({
+							title: `🍽️\n${nama}, Udah makan belom🤔 ?`,
+							confirmButtonText: 'Udah',
+							cancelButtonText: 'Belom',
+							showCancelButton: true,
+							
+						});
+						if(Udah){
+							await swals.fire('sama dong...\nVv udah makan juga kok😚...');
+							var { value: gak } = await swals.fire({
+								title: `😁\n${nama}, Sibuk gak ?`,
+								confirmButtonText: 'gak',
+								cancelButtonText: 'Banget',
+								showCancelButton: true,
+								
+							});
+							if(gak){
+								await swals.fire('😁\nVv punya tebak-tebakan nih');
+								var { value: Mau } = await swals.fire({
+									title: `😄\n${nama}, Mau tau gak?`,
+									confirmButtonText: 'Mau',
+									cancelButtonText: 'gakk',
+									showCancelButton: true,
+									
+								});
+								if(Mau){
+									var { value: Baik } = await swals.fire({
+									title: `Kalau ayam berkokok, berarti harimau….?`,
+									confirmButtonText: 'gaktau',
+									});
+									await swals.fire('Kalau ayam berkokok, berarti harimau….?\n\nHari mau pagi\n😆');
+									var { value: Mau } = await swals.fire({
+										title: `😄\nLagi?`,
+										confirmButtonText: 'lagi',
+										cancelButtonText: 'gakk',
+										showCancelButton: true,
+										
+									});
+									if(Mau){
+										var { value: Baik } = await swals.fire({
+										title: `Apa itu cemilan?`,
+										confirmButtonText: 'apatuh?',
+										});
+										await swals.fire('Cebelum cepuluh, cecudah celapan\n😅');
+										await swals.fire('😂\neaaa...');
+										var { value: Mau } = await swals.fire({
+											title: `😄\nLagi?`,
+											confirmButtonText: 'sekali lagi',
+											cancelButtonText: 'cukup',
+											showCancelButton: true,
+											
+										});
+										if(Mau){
+											var { value: Baik } = await swals.fire({
+											title: `Ayam-ayam apa yang paling besar?`,
+											confirmButtonText: 'ayam apa?',
+											});
+											await swals.fire('Ayam semesta\n🤣');
+											await swals.fire('jangan senyum gitu dong\n🙈');
+											await swals.fire('😅\nVv jadi malu nih..');
+											var { value: Mau } = await swals.fire({
+												title: `😅\nUdah ya...`,
+												confirmButtonText: 'lagi dong',
+												cancelButtonText: 'Ok',
+												showCancelButton: true,
+												
+											});
+											
+											if(Mau){
+												await swals.fire('tebak-tebakan Vv\nudah habis,\nmaff ya\n🙏🙏🙏');
+												await swals.fire('btw');
+												var { value: udah } = await swals.fire({
+													title: `${nama},Udah punya ayang kah?\n😄`,
+													confirmButtonText: 'udah',
+													cancelButtonText: 'belom',
+													showCancelButton: true,
+													
+												});
+												if(udah){
+													var { value: BANGET } = await swals.fire({
+														title: `😙\nbahagia gak ${nama}, sama ayang \n${nama}?`,
+														confirmButtonText: 'BANGET',
+														cancelButtonText: 'GAK',
+														showCancelButton: true,	
+													});
+													
+													if(BANGET){
+														var { value: persen } = await swals.fire({
+															title: `Seberapa sayang,\n${nama} sama\nayang ${nama}?`,
+															icon: 'question',
+															input: 'range',
+															inputLabel: '💕Antara 1-100 ya💕',
+															inputAttributes: {
+																min: 1,
+																max: 100,
+															},
+															inputValue: 69
+														});
+													
+														if(persen){
+															await swals.fire(`😘\n${nama} sepertinya bahagia sekali ya\n sampai ${persen}%\nsayangnya`);
+															await swals.fire('🙄\n👉👈\nkalau begitu');
+															var { value: kenapa } = await swals.fire({
+																title: '😊\nudah yah',
+																confirmButtonText: 'kenapa?',
+																cancelButtonText: 'lagi dong',
+																showCancelButton: true,
+															});
+															await swals.fire('😉\nVv mau bobo dulu');
+															if(kenapa){
+																var { value: makasih } = await swals.fire({
+																	title: `😇\nsemoga hari ini \nmood ${nama}, bertambah ya`,
+																	confirmButtonText: 'makasih',
+																		
+																});
+																
+																var { value: Baik } = await swals.fire({
+																	title: `😊\nsenyum dulu dong`,
+																	confirmButtonText: 'iya, ini senyum',
+																});
+																await swals.fire('👋😁\ndah..sampai jumpa');
+																await swals.fire('🖐️😯\no iya... bentar');
+																var { value: belom } = await swals.fire({
+																	title: `😁\ncoba ${nama}, klik gambar hati \nyang dibawah`,
+																	confirmButtonText: '?',			
+																});
+															<!-------------------------------------------------------------------------- 12 -------------------------------------------------------------------------->
+															} else {
+																var { value: makasih } = await swals.fire({
+																	title: `😇\nsemoga hari ini \nmood ${nama}, bertambah ya`,
+																	confirmButtonText: 'makasih',
+																		
+																});
+																var { value: Baik } = await swals.fire({
+																	title: `😊\nsenyum dulu dong`,
+																	confirmButtonText: 'iya, ini senyum',
+																});
+																await swals.fire('👋😁\nsampai jumpa');//makasih
+																await swals.fire('🖐️😯\no iya... bentar');
+																var { value: belom } = await swals.fire({
+																	title: `😁\ncoba ${nama}, klik gambar hati \nyang dibawah`,
+																	confirmButtonText: '?',			
+																});
+															
+															}
+														<!-------------------------------------------------------------------------- 11 -------------------------------------------------------------------------->
+														} else {
+															await swals.fire('😟\nyahhh');//udah ya
+														
+														}
+													<!-------------------------------------------------------------------------- 10 -------------------------------------------------------------------------->
+													} else {
+														await swals.fire('😟\nyang sabar ya');//gak bahagia
+														await swals.fire('🙂\nmungkin itu cobaan');
+														await swals.fire('🖐️😯\no... bentar');
+														await swals.fire('😏\ncoba deh');
+														var { value: belom } = await swals.fire({
+																		title: `😁\n${nama}, klik gambar hati \nyang dibawah`,
+																		confirmButtonText: '?',			
+																	});
+													}
+												<!-------------------------------------------------------------------------- 99999 -------------------------------------------------------------------------->
+												} else {
+													await swals.fire('😟\nyang sabar ya...');//belom punya
+													
+													var { value: Baik } = await swals.fire({
+																	title: `😊\nsenyum dulu dong`,
+																	confirmButtonText: 'iya, ini senyum',
+																});
+													await swals.fire('🖐️😯\no... bentar');
+													await swals.fire('😏\ncoba deh');
+													var { value: belom } = await swals.fire({
+																	title: `😁\n${nama}, klik gambar hati \nyang dibawah`,
+																	confirmButtonText: '?',			
+																});
+												}
+											<!-------------------------------------------------------------------------- 88888 -------------------------------------------------------------------------->
+											} else {
+												await swals.fire('maff ya 😅\n🙏jika terlalu receh🙏');//gak mau main
+											
+											}
+										<!-------------------------------------------------------------------------- 77777 -------------------------------------------------------------------------->
+										} else {
+											await swals.fire('☹️\nhmmm...');//gak mau main
+										
+										}
+									<!-------------------------------------------------------------------------- 66666 -------------------------------------------------------------------------->
+									} else {
+										await swals.fire('😞\nya udah deh...\n🙏maff ya kak🙏');//gak mau main
+									
+									}
+								<!-------------------------------------------------------------------------- 55555 -------------------------------------------------------------------------->
+								} else {
+									await swals.fire('ya Udah deh☹️\nMungkin lain kali');//gak mau main
+								
+								}
+								
+							<!-------------------------------------------------------------------------- 44444 -------------------------------------------------------------------------->
+							} else {
+								await swals.fire('Wah😓\nMaff ya, jika menganggu\n🙏');//belum makan
+							
+							}
+						<!-------------------------------------------------------------------------- 33333 -------------------------------------------------------------------------->
+						} else {
+							await swals.fire('Makan dulu ya\n😇biar sehat selalu😇');//lagi sibuk
+						
+						}
+						
+					<!-------------------------------------------------------------------------- 22222 -------------------------------------------------------------------------->
+					} else {
+						await swals.fire(`Wah😥, ${nama} Kenapa, \n\nsini cerita\nSiapa tau bisa bantu `);//kurang baik
+						var { value: keluhan } = await swals.fire({
+							title: 'curahkan masalahnya disini ya..\n Vv Siap mendengarkan sampai habis kok\n😊',
+							input: 'text',
+							confirmButtonText: 'Segitu aja',
+							cancelButtonText: 'Gak jadi 😅',
+							showCancelButton: true,
+						});
+						await swals.fire('😞\nhmmm...');
+						await swals.fire('🙂\nsemoga masalahnya cepet\nselesai ya');
+						await swals.fire('🖐️😯\no iya... bentar');
+						var { value: belom } = await swals.fire({
+						title: `😁\ncoba ${nama}, klik gambar hati \nyang dibawah`,
+						confirmButtonText: '?',			
+						});
+					}
+					
+				<!-------------------------------------------------------------------------- 11111 -------------------------------------------------------------------------->	
+                } else {
+                    await swals.fire('☹️ Isi dong Kak ☹️');//gak isi nama
+					
+                }
+            }
+        function hati(){
+            document.getElementById('button').style = 'display: none';
+			document.getElementById('hati').innerHTML = `Made at Night with 💙`;
+            document.getElementById('iloveyou').style = '';
+        }
+        </script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    </body>
+</html>
